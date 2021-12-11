@@ -14,6 +14,7 @@ namespace LogicalPrograms
                 Console.WriteLine("3.PERFECT NUMBER");
                 Console.WriteLine("4.REVERSAL OF NUMBER");
                 Console.WriteLine("5.STOPWATCH PROGRAM");
+                Console.WriteLine("6.COUPON RANDOM NUMBERS");
                 Console.WriteLine("ENTER YOUR OPTION");
               
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -39,6 +40,10 @@ namespace LogicalPrograms
                     case 5:
                         StopWatch.Stop_Watch watch=new StopWatch.Stop_Watch();
                         watch.watch();
+                        break;
+                    case 6:
+                        CouponNumber.Coupon_Number coupon = new CouponNumber.Coupon_Number();
+                        coupon.coupon();
                         break;
                     default:
                         Console.WriteLine("ENTER CORRECT OPTION: ");
