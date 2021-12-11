@@ -10,6 +10,7 @@ namespace LogicalPrograms
             {
                 Console.WriteLine("-----------------");
                 Console.WriteLine("1.FIBONACCI SERIES");
+                Console.WriteLine("2.PRIME NUMBER");
                 Console.WriteLine("ENTER YOUR OPTION");
                 int select = Convert.ToInt32(Console.ReadLine());
 
@@ -18,6 +19,10 @@ namespace LogicalPrograms
                     case 1:
                    FibonacciSeries.Fibonacci_Series fibo=new FibonacciSeries.Fibonacci_Series();
                         fibo.Fibonacci();
+                        break;
+                    case 2:
+                        Prime_Number.PrimeNumber prime=new Prime_Number.PrimeNumber();
+                        prime.prime();
                         break;
                     default:
                         Console.WriteLine("ENTER CORRECT OPTION: ");
