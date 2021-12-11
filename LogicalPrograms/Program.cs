@@ -13,7 +13,9 @@ namespace LogicalPrograms
                 Console.WriteLine("2.PRIME NUMBER");
                 Console.WriteLine("3.PERFECT NUMBER");
                 Console.WriteLine("4.REVERSAL OF NUMBER");
+                Console.WriteLine("5.STOPWATCH PROGRAM");
                 Console.WriteLine("ENTER YOUR OPTION");
+              
                 int select = Convert.ToInt32(Console.ReadLine());
 
                 switch (select)
@@ -33,6 +35,10 @@ namespace LogicalPrograms
                     case 4:
                         ReverseNumber.Reverse_Number reverse = new ReverseNumber.Reverse_Number();
                         reverse.Reverse();
+                        break;
+                    case 5:
+                        StopWatch.Stop_Watch watch=new StopWatch.Stop_Watch();
+                        watch.watch();
                         break;
                     default:
                         Console.WriteLine("ENTER CORRECT OPTION: ");
